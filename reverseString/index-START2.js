@@ -2,7 +2,7 @@
 Given a string of text, write an algorithm that returns the text received in a reversed format. 
 E.g reverseString('algorithms') // should return 'smhtirogla'
 */
-//day 3
+//day 4
 
 // binding methods// 
 // function reverseString(text) {
@@ -18,28 +18,26 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
    
 //for loop 
 // function reverseString(text) {
-//  let result = '';
-//  for (let i = text.length - 1; i >= 0; i--) {
-//      result += text[i]
-//  }
-//  return result 
+//     let result = ''
+//     for (let i = text.length - 1; i >= 0; i--) {
+//         result += text[i]
+//     }
+//     return result
 // }
 
 
 
 //callback / recursive way
 //  function reverseString(text) {
-//     return text === '' ? '' : reverseString(text.slice(1)) + text[0]
-// }
+//  return text === '' ? '' : reverseString(text.slice(1)) + text[0]
+//  }
                                                                 
 
 //using reduce       
 function reverseString(text){
-    return [...text].reduce((acc, item) => {
-        return item + acc
-    }, '')
+ return [...text].reduce((acc, item) => item + acc, '')
 }           
-//                                                                                                                  
+                                                                                                                 
             
 
 module.exports = reverseString
