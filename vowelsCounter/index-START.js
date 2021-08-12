@@ -2,24 +2,21 @@
 Given a string of text, return the number of vowels found within the text
 e.g vowelsCounter('anehizxcv') // will return 3
 */
+//day 1
 
 // const vowels = ['a', 'e', 'i', 'o', 'u']
 // function vowelsCounter(text) {
-//     const vowels = ['a', 'e', 'i', 'o', 'u']
 //     let counter = 0;
-//     let text2 = text.toLowerCase()
-//     for (let letter of text2) {
-//         if(vowels.includes(letter)){
-//             counter++
-//         }
+//     for (const letter of text.toLowerCase()) {
+//         if (vowels.includes(letter)) counter++
 //     }
-//     return counter
+//     return counter;
 // }
 
 function vowelsCounter(text){
-    let matching = text.match(/[aeiou]/gi)
-    if(matching) return matching.length
-    else return 0
+    let matches = text.match(/[aeiou]/gi);
+    if(matches) return matches.length
+    else return 0 
 }
 
 
