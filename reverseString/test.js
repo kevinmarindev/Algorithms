@@ -1,4 +1,4 @@
-const reverseString = require('./index-START')
+const reverseString = require('./index-START2')
 
 test('reverseString is a function', () => {
   expect(typeof reverseString).toEqual('function');
