@@ -19,6 +19,6 @@ function vowelsCounter(text){
     if(matches) return matches.length;
     else return 0
 }
-
+//looked over this algo again 
 
 module.exports = vowelsCounter;
