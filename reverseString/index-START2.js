@@ -4,10 +4,13 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 */
 //day 5
 
-// binding methods// 
-function reverseString(text){
-    text.split('').reverse().join('')
+
+//bind methods
+let reverseString = function (text){
+    return text.split().reverse().join()
 }
+
+
 
 
 //es6 binding methods//
@@ -18,20 +21,22 @@ function reverseString(text){
    
 //for loop 
 function reverseString(text) {
-  let result = '';
-  for (let i = text.length; i >= 0; i--) {
-      result += text[i]
-      
-  }
-  return result 
+    let str = ""
+    for (let i = text.length - 1; i > 0; i--) {
+        str += text[i] 
+    }
+    return str
 }
 
 
 
-// // callback / recursive way
+// callback / recursive way
  function reverseString(text) {
-  return text === '' ? '' : reverseString(text.substring(1)) + text[0]
+  return text === '' ? '' : reverseString(text.substring(1)) + text[0], console.log(text)
  }
+ //the function with the word car 
+ //1st run: f(car) + 
+ //2nd: 
                                                                 
 
  //revisted the callstack
