@@ -31,12 +31,19 @@ function reverseString(text) {
 
 
 // callback / recursive way
+//  function reverseString(text) {
+//   return text === '' ? '' : reverseString(text.substring(1)) + text[0], console.log(text)
+//  }
  function reverseString(text) {
-  return text === '' ? '' : reverseString(text.substring(1)) + text[0], console.log(text)
+  return text === '' ? '' : reverseString(text.substring(1)) + text[0]
  }
  //the function with the word car 
- //1st run: f(car) + 
- //2nd: 
+ // f(car)
+ //1st run: f(ar) + c
+ //2nd: f(r) + a
+ //3rd f() + r
+ //4: f() + ''
+ //the callstack is responsible for returning the word rac the reverse or car once it gets 
                                                                 
 
  //revisted the callstack
