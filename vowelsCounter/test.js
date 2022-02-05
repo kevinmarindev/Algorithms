@@ -1,5 +1,6 @@
 const vowelsCounter = require('./index-START');
 
+
 test('vowelsCounter is a function', () => {
   expect(typeof vowelsCounter).toEqual('function');
 });

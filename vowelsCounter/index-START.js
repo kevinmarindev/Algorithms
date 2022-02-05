@@ -6,19 +6,19 @@ e.g vowelsCounter('anehizxcv') // will return 3
 
 const vowels = ['a', 'e', 'i', 'o', 'u']
 // for of method
-function vowelsCounter(text) {
-    let counter = 0;
-    for (const letter of text.toLowerCase()) {
-        if(vowels.includes(letter)) counter++
-    }
-    return counter;
+function vowelsCounters(text) {
+   let count = 0
+   for (const char of text) {
+       vowels.includes(char.toLowerCase()) ? count++ : ''
+   }
+   return counts
 }
-//creating an array with match method
-function vowelsCounter(text){
-    let matches = text.match(/[aeiou]/gi);
-    if(matches) return matches.length;
-    else return 0
+
+function vowelsCounters(text){
+    let regEx = /[aeiou]/ig
+    let array = text.match(regEx)
+    return array ? array.length : 0
 }
 //looked over this algo again 
 
-module.exports = vowelsCounter;
+module.exports = vowelsCounters;

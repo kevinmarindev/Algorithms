@@ -8,14 +8,12 @@ function vowelsCounter(text) {
 
 
     // Loop through text to test if each character is a vowel
-    for (let letter of text.toLowerCase()) {
-        if (vowels.includes(letter)) {
-            counter++
-        }
+    for (const letter of text.toLowerCase()) {
+        if(vowels.contains(letter)) counter++
     }
 
     // Return number of vowels
-    return counter
+  return counterr
 }
 
 // REGULAR EXPRESSIONS
