@@ -5,40 +5,33 @@ e.g maxRecurringChar('aabacada') // will return 'a'
 
 
 
-// function maxRecurringChar(text) {
-//     let charmap = {};
-//     let maxCharVal = 0
-//     let maxChar = ''
-
-//     for (let char of text) {
-//         if(charmap.hasOwnProperty(char)){
-//             charmap[char]++
-//         }else{
-//             charmap[char] = 1
-//         }
-//     }
-
-//     for (let char in charmap) {
-//         if(charmap[char] > maxCharVal){
-//           maxCharVal = charmap[char]
-//           maxChar = char
-//         }
-//     }
-//  return maxChar
-// }
+function maxRecurringChar(text) {
+    let obj = {}
+    maxchar = ''
+    count = 0;
+    for (const char of text) {
+        if(obj[char]) obj[char]++
+        else obj[char] = 1
+    }
+    for (const char in obj) {
+        if(obj[char] > count) count = obj[char], maxchar = char
+    }
+    return maxchar
+}
 
 function maxRecurringChar(str){
-    let objToHoldChars = {}
-    let charVal = 0
-    let theChar = ''
+    let obj = {}
+    let charArr, valueArray = []
+    maxchar = 0;
     for (const char of str) {
-        if(objToHoldChars[char]) objToHoldChars[char]++
-        else objToHoldChars[char] = 1
+        if(obj[char]) obj[char]++
+        else obj[char] = 1
     }
-    for (const char in objToHoldChars) {
-        if(objToHoldChars[char] > charVal) charVal = objToHoldChars[char], theChar = char;
-    }
-    return theChar
+    //mapping done obj cretaed with chars as keys and number of times as values
+    charArr = Object.keys(obj)
+    valueArray = Object.values(obj)
+    maxchar = Math.max(...valueArray)
+    return charArr[valueArray.indexOf(maxchar)]
 }
 
 module.exports = maxRecurringChar;
