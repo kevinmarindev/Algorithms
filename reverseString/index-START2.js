@@ -6,8 +6,8 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 //bind methods
-let reverseString = function (text){
-    return text.split().reverse().join()
+function reverseString(text){
+    return text.split().reverse().join('')
 }
 
 
@@ -20,10 +20,10 @@ let reverseString = function (text){
 // }
    
 //for loop 
-function reverseString(text) {
-    let str = ""
-    for (let i = text.length - 1; i > 0; i--) {
-        str += text[i] 
+function reverseString(text){
+    let str = ''
+    for (let i = text.length - 1; i >= 0; i--) {
+        str += text[i]
     }
     return str
 }
