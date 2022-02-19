@@ -5,7 +5,7 @@ e.g vowelsCounter('anehizxcv') // will return 3
 //day 5
 
 const vowels = ['a', 'e', 'i', 'o', 'u']
-//use For of method
+//use For loop method
 
 
 function vowelsCounters(word){
@@ -17,13 +17,13 @@ function vowelsCounters(word){
     return count
 }
 
-
-function vowelsCounters(text){
-    let amount = 0;
-    for (const char of text) {
-        vowels.includes(char.toLowerCase()) ? amount++ : ''
+//Use for of method
+function vowelsCounters (word) {
+    let count = 0;
+    for (const char of word.toLowerCase()) {
+        if(vowels.includes(char)) counter++
     }
-    return amount
+    return count 
 }
 
 // function vowelsCounters(text){
