@@ -8,35 +8,32 @@ const vowels = ['a', 'e', 'i', 'o', 'u']
 //use For loop method
 
 
-function vowelsCounters(word){
-    let count = 0
-    for (let i = 0; i < word.length; i++) {
-        if (vowels.includes(word[i])) count++
+// function vowelsCounters(word){
+//     let count = 0
+//     for (let i = 0; i < word.length; i++) {
+//         if (vowels.includes(word[i])) count++
         
-    }
-    return count
-}
-
-//Use for of method
-function vowelsCounters (word) {
-    let count = 0;
-    for (const char of word.toLowerCase()) {
-        if(vowels.includes(char)) counter++
-    }
-    return count 
-}
-
-// function vowelsCounters(text){
-//     let regEx = /[aeiou]/ig
-//     let array = text.match(regEx)
-//     return array ? array.length : 0
+//     }
+//     return count
 // }
 
-function vowelsCounters(text){
-    let reggex = /[aeiou]/ig
-    let array = text.match(reggex)
-    return array ? array.length : 0 
+//Use for of method
+// function vowelsCounters (word) {
+//     let count = 0;
+//     for (const char of word.toLowerCase()) {
+//         if(vowels.includes(char)) counter++
+//     }
+//     return count 
+// }
+
+
+//use regex
+
+function vowelsCounters(theWord){
+    let regex = /[aeiou]/gi
+    let count = theWord.match(regex)
+    console.log(count)
+    return count ? count.length : 0
 }
-//looked over this algo again 
 
 module.exports = vowelsCounters;
