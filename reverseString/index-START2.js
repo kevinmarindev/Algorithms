@@ -6,8 +6,8 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 //bind methods
-function reverseString(text){
-    return text.split().reverse().join('')
+function reverseString(words){
+   return words.split('').reverse().join('')
 }
 
 
