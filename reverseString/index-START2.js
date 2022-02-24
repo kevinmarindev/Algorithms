@@ -15,9 +15,9 @@ function reverseString(words){
 
 //es6 binding methods//
 //use spread operator to create an array 
-// function reverseString(text) {
-//    return [...text].reverse().join('')
-// }
+function reverseString(text) {
+   return [...text].reverse().join('')
+}
    
 //for loop 
 function reverseString(text){
