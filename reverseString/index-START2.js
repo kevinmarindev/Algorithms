@@ -20,12 +20,12 @@ function reverseString(text) {
 }
    
 //for loop 
-function reverseString(text){
-    let str = ''
-    for (let i = text.length - 1; i >= 0; i--) {
-        str += text[i]
+function reverseString(sentence){
+    let reverse = ''
+    for (let i = sentence.length; i > 0; i-- ){
+        reverse += sentence[i]
     }
-    return str
+    return reverse
 }
 
 
