@@ -21,8 +21,8 @@ function countTheChars(str){
     
     
 }
-
+//or use arrays 
 
 module.exports = countTheChars
 
-console.log(countTheChars('kevinnreee'))
+// console.log(countTheChars('kevinnreee'))
