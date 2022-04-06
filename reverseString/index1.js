@@ -9,12 +9,19 @@
 // }
 
 
+// function rvrsStr(str){
+//     let rstr = ''
+//     for (let i = str.length - 1; i >= 0; i--) {
+
+//        rstr += str[i]
+//     }
+//     return rstr
+// }
+
+
+//use callbacks
+
 function rvrsStr(str){
-    let rstr = ''
-    for (let i = str.length - 1; i >= 0; i--) {
-        // console.log(str[i])
-       rstr += str[i]
-    }
-    return rstr
+
 }
 console.log(rvrsStr('kevin'))

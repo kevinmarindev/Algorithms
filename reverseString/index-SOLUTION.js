@@ -40,6 +40,12 @@ function reverseString(text) {
     }
 }
 
+///first call ups
+
+// ps u
+// s p
+// s
+
 
 // USING .REDUCE()
 
