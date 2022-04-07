@@ -22,6 +22,7 @@
 //use callbacks
 
 function rvrsStr(str){
-
+    if(str.length == 0) return ''
+    else return rvrsStr(str.slice(1)) + str[0]
 }
 console.log(rvrsStr('kevin'))
