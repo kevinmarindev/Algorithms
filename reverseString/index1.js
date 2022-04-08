@@ -21,8 +21,14 @@
 
 //use callbacks
 
+// function rvrsStr(str){
+//     if(str.length == 0) return ''
+//     else return rvrsStr(str.slice(1)) + str[0]
+// }
+
+
+//using Reduce array method
 function rvrsStr(str){
-    if(str.length == 0) return ''
-    else return rvrsStr(str.slice(1)) + str[0]
+    return str.split('').reduce((prev, curr) => curr + prev)
 }
 console.log(rvrsStr('kevin'))
