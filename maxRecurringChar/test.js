@@ -1,4 +1,4 @@
-const maxRecurringChar = require('./index-START3');
+const maxRecurringChar = require('./index-1');
 
 test('maxRecurringChar is a function', () => {
   expect(typeof maxRecurringChar).toEqual('function');
