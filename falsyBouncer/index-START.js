@@ -7,8 +7,8 @@ E.g  falsyBouncer([1, 0, null, '', 5]) // should return [1,5]
 
 
 function falsyBouncer(array) {
-    // Code goes here
+    return array.filter(item => item)
 }
 
-
+console.log(falsyBouncer([1,0,null,'',5, 12, 'yes']))
 module.exports = falsyBouncer
